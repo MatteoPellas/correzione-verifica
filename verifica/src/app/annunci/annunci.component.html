@@ -8,3 +8,6 @@
 <br>
 <input type = "text" #telefonoRisp>
 <label>telefono</label>
+<button (click) = "rispondi(risposta, telefonoRisp)">rispondi</button>
+
+<app-comment *ngFor = "let x of risposta_vett" [risposta]="x"></app-comment>
