@@ -1,0 +1,16 @@
+<body>
+  <input type = "text" #nome>
+  <label>user</label>
+  <br>
+
+  <input type = "text" #telefono>
+  <label>telefono</label>
+  <br>
+
+  <input type = "text" #messaggio style="height: 50px;">
+  <label>messaggio</label>
+
+  <button (click)="invia(nome, telefono, messaggio)">invia</button>
+
+  <app-annunci *ngFor = "let x of annunci_vett" [annunci]="x"></app-annunci>
+</body>
